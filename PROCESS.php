@@ -36,12 +36,12 @@ if (isset($_POST['register'])) {
     
     $sql="UPDATE USER SET Name='$username',Email='$email',City='$city' WHERE STD='$id'";
     $response=$conn->query($sql);
-    if($response){
-        echo "Data updated successfully";
-        header('location:index.php');
-    }
+    echo "Data updated successfully".$response;
+    // if($response){
+    //     echo "Data updated successfully";
+    //     // header('location:index.php');
+    // }
  }
-
-
+ 
  
 ?>
