@@ -34,7 +34,7 @@
             <input type="text" name="username" id="name" value="<?php echo $row['Name']?>"  required>
             <input type="email" name="email" id="email" value="<?php echo $row['Email']?>" required>
             <input type="city" name="city" id="text" value="<?php echo $row['City']?>" required>
-            <input type="submit" name="update">
+            <input type="submit" name="update" value="UPDATE">
         </form>
     </fieldset>
 
