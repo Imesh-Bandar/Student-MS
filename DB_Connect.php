@@ -1,11 +1,8 @@
 <?php
-
-
-
 //create database connection
 $SERVERNAME='localhost';
 $USERNAME='root';
-$PASSWORD='';
+$PASSWORD='admin';
 $DBNAME='sms';
 
 //create connection
@@ -15,7 +12,8 @@ $conn=new mysqli($SERVERNAME,$USERNAME,$PASSWORD,$DBNAME);
 if($conn->connect_error){
     die("Connection failed: ".$conn->connect_error);
 }else{
-    echo "Connection successful";
+    //echo "Connection successful";
+    return $conn;
 }
 
 ?>
